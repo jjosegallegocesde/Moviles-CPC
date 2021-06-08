@@ -1,0 +1,33 @@
+package com.example.animecpc;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import android.os.Bundle;
+
+import java.util.ArrayList;
+
+public class Home extends AppCompatActivity {
+
+    ArrayList<Heroe> listadeHeroes= new ArrayList<>();
+    RecyclerView listado;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_home);
+
+        listado=findViewById(R.id.listaHeroes);
+        listado.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false));
+
+    }
+
+
+    public void crearLista(){
+
+    }
+
+
+
+}
